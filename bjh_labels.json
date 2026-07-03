@@ -1,0 +1,57 @@
+{
+  "_schema": {
+    "version": 3,
+    "description": "BJH stroke patient clinical labels (4 tasks). Keys are subject_id (numeric string).",
+    "fields": {
+      "FMA_UE": "FMA hand score (Fugl-Meyer hand sub-score in this project), integer 0-20",
+      "BI": "Barthel Index, integer 0-100",
+      "hand_tone": "手肌张力, categorical: '0', '1', '1+', '2', '3', '4'",
+      "hand_function": "手功能分级, integer category: 1, 2, 3, 4, 5, 6"
+    },
+    "deprecated_fields": {
+      "wrist_tone": "腕肌张力 — retired; values retained for archival only and NOT consumed by training/inference."
+    },
+    "notes": [
+      "FMA_UE field name kept for backwards compat but actually stores the FMA hand sub-score (0-20).",
+      "The 1+ class for tone is a distinct categorical label and MUST be kept as a string.",
+      "wrist_tone was retired in schema v3; the field may still exist on legacy subjects but the training pipeline ignores it."
+    ]
+  },
+  "subjects": {
+    "1": {
+      "FMA_UE": 1,
+      "BI": 60,
+      "wrist_tone": "1+",
+      "hand_tone": "1+",
+      "hand_function": 3
+    },
+    "2": {
+      "FMA_UE": 19,
+      "BI": 90,
+      "wrist_tone": "0",
+      "hand_tone": "0",
+      "hand_function": 6
+    },
+    "3": {
+      "FMA_UE": 18,
+      "BI": 60,
+      "wrist_tone": "0",
+      "hand_tone": "0",
+      "hand_function": 6
+    },
+    "4": {
+      "FMA_UE": 18,
+      "BI": 90,
+      "wrist_tone": "0",
+      "hand_tone": "0",
+      "hand_function": 6
+    },
+    "5": {
+      "FMA_UE": 0,
+      "BI": 20,
+      "wrist_tone": "1+",
+      "hand_tone": "1+",
+      "hand_function": 3
+    }
+  }
+}

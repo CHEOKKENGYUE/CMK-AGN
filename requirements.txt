@@ -1,0 +1,9 @@
+numpy
+pandas
+scipy
+matplotlib
+torch
+scikit-learn
+# Baseline comparison framework (src/baselines/)
+xgboost>=1.7
+joblib>=1.2

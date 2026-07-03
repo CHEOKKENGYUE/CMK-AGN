@@ -1,0 +1,18 @@
+{
+  "split_unit": "subject_id",
+  "n_splits": 1,
+  "folds": [
+    {
+      "fold": 1,
+      "train_subjects": [
+        "1",
+        "2",
+        "3"
+      ],
+      "val_subjects": [
+        "4",
+        "5"
+      ]
+    }
+  ]
+}

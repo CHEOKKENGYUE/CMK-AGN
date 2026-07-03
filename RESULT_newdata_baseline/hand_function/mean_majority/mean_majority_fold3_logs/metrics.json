@@ -1,0 +1,63 @@
+{
+  "accuracy": 0.21212121212121213,
+  "macro_f1": 0.06999999999999999,
+  "cohen_kappa": 0.0,
+  "weighted_kappa": 0.0,
+  "precision_c0": 0.21212121212121213,
+  "recall_c0": 1.0,
+  "f1_c0": 0.35,
+  "support_c0": 7,
+  "precision_c1": 0.0,
+  "recall_c1": 0.0,
+  "f1_c1": 0.0,
+  "support_c1": 9,
+  "precision_c2": 0.0,
+  "recall_c2": 0.0,
+  "f1_c2": 0.0,
+  "support_c2": 5,
+  "precision_c3": 0.0,
+  "recall_c3": 0.0,
+  "f1_c3": 0.0,
+  "support_c3": 6,
+  "precision_c4": 0.0,
+  "recall_c4": 0.0,
+  "f1_c4": 0.0,
+  "support_c4": 6,
+  "confusion_matrix": [
+    [
+      7,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      9,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      5,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      6,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      6,
+      0,
+      0,
+      0,
+      0
+    ]
+  ]
+}
